@@ -1,7 +1,7 @@
 import {useState, useContext} from 'react'
 import './index.css'
 import EachMenu from '../EachMenu'
-import RestaurantContext from '../../RestaurantContext'
+import RestaurantContext from '../../context/RestaurantContext'
 
 const RenderPage = () => {
   const {apiResponse} = useContext(RestaurantContext)

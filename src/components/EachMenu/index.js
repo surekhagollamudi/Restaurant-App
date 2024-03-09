@@ -1,6 +1,6 @@
 import {useState, useContext} from 'react'
 import './index.css'
-import RestaurantContext from '../../RestaurantContext'
+import RestaurantContext from '../../context/RestaurantContext'
 
 const EachMenu = props => {
   const {eachItemDetails} = props

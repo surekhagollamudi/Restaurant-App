@@ -1,5 +1,4 @@
 import {Redirect, Route} from 'react-router-dom'
-// eslint-disable-next-line import/no-extraneous-dependencies
 import Cookie from 'js-cookie'
 
 const ProtectedRoute = props => {

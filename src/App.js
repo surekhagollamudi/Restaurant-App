@@ -3,9 +3,9 @@ import {useState, useEffect} from 'react'
 import Loader from 'react-loader-spinner'
 import './App.css'
 import Home from './components/Home'
+
 import ProtectedRoute from './components/ProtectedRoute'
-// import LoginForm from './components/LoginForm'
-import RestaurantContext from './RestaurantContext'
+import RestaurantContext from './context/RestaurantContext'
 import CartRoute from './components/CartRoute'
 
 const apiStatusConstant = {

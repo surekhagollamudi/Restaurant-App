@@ -1,5 +1,4 @@
 import {Link, withRouter} from 'react-router-dom'
-// eslint-disable-next-line import/no-extraneous-dependencies
 // import Cookies from 'js-cookie'
 
 import {useContext} from 'react'
@@ -7,14 +6,14 @@ import {useContext} from 'react'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 
 import './index.css'
-import RestaurantContext from '../../RestaurantContext'
+import RestaurantContext from '../../context/RestaurantContext'
 
-const Header = () => {
+const NavBar = () => {
   const {cartList, apiResponse} = useContext(RestaurantContext)
   const {data} = apiResponse
   const {restaurantName} = data
 
-  /* const onClickLogout = () => {
+  /*  const onClickLogout = () => {
     const {history} = props
     Cookies.remove('jwt_token')
     history.replace('/login')
@@ -47,4 +46,4 @@ const Header = () => {
   )
 }
 
-export default withRouter(Header)
+export default withRouter(NavBar)

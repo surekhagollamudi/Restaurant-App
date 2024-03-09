@@ -49,6 +49,9 @@
   .cart-orders {
     font-size: 0.4rem;
   }
+  .my-order-menu {
+      display: none;
+  }
 }
 
 .logout-desktop-btn {

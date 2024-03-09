@@ -1,11 +1,11 @@
 import './index.css'
-import Header from '../Header'
+import NavBar from '../NavBar'
 
 import RenderPage from '../RenderPage'
 
 const Home = () => (
   <>
-    <Header />
+    <NavBar />
     <div className="menu-category-container">
       <RenderPage />
     </div>

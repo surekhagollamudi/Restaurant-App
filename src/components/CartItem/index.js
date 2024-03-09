@@ -3,7 +3,7 @@ import {useContext} from 'react'
 import {AiFillCloseCircle} from 'react-icons/ai'
 
 import './index.css'
-import RestaurantContext from '../../RestaurantContext'
+import RestaurantContext from '../../context/RestaurantContext'
 
 const CartItem = props => {
   const {

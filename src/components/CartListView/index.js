@@ -2,7 +2,7 @@ import {useContext} from 'react'
 import CartItem from '../CartItem'
 
 import './index.css'
-import RestaurantContext from '../../RestaurantContext'
+import RestaurantContext from '../../context/RestaurantContext'
 
 const CartListView = () => {
   const {cartList} = useContext(RestaurantContext)

@@ -1,9 +1,9 @@
 import {useContext} from 'react'
 import './index.css'
-import Header from '../Header'
+import NavBar from '../NavBar'
 import EmptyCartView from '../EmptyCartView'
 
-import RestaurantContext from '../../RestaurantContext'
+import RestaurantContext from '../../context/RestaurantContext'
 import CartListView from '../CartListView'
 
 const CartRoute = () => {
@@ -14,7 +14,7 @@ const CartRoute = () => {
 
   return (
     <>
-      <Header />
+      <NavBar />
       <div className="cart-container">
         {cartList.length === 0 ? (
           <EmptyCartView />
