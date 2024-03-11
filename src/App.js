@@ -1,9 +1,9 @@
-import {Switch} from 'react-router-dom'
+import {Switch, Route} from 'react-router-dom'
 import {useState, useEffect} from 'react'
 import Loader from 'react-loader-spinner'
 import './App.css'
 import Home from './components/Home'
-
+import LoginForm from './components/LoginForm'
 import ProtectedRoute from './components/ProtectedRoute'
 import RestaurantContext from './context/RestaurantContext'
 import CartRoute from './components/CartRoute'
@@ -190,7 +190,12 @@ const App = () => {
       }}
     >
       <div className="page-container">
-        <Switch>{renderMenuListContainer()}</Switch>
+        <Switch>
+          <>
+            <Route exact path="/login" component={LoginForm} />
+            {renderMenuListContainer()}
+          </>
+        </Switch>
       </div>
     </RestaurantContext.Provider>
   )
